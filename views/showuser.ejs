@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>show user in table format</title>
+</head>
+<body>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>NO:- </th>
+                <th>USerId</th>
+                <th>UserName</th>
+                <th>UserEmail</th>
+                <th>Submit Btn</th>
+                <th>Delete Btn</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% let count = 1 %>
+           <% for(let data of result) { %>
+                <tr>
+                    <td><%= count %></td>
+                    <td><%= data.id %></td>
+                    <td><%= data.username %></td>
+                    <td><%= data.email%></td>
+                    <td>
+                        <form action="/users/<%= data.id %>/edit" method="get">
+                            <button type="submit">Edit</button>
+                        </form>
+                    </td>
+                    <td>
+                        <form action="/users/<%= data.id %>/deletepass" method="get">
+                            <button type="submit">Delete</button>
+                        </form>
+                    </td>
+                </tr>
+                <% count++%>
+           <% } %>
+        </tbody>
+    </table>
+</body>
+</html>

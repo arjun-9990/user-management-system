@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>show details</title>
+</head>
+<body>
+    <% let count = 1 %>
+    <% for (let data of datas) { %>
+        <hr>
+        <h1>No :- <%= count %></h1>
+        <%count++%>
+        <h1>UserName is : - <%= data.username %></h1>
+        <h2>email is :-<%= data.email %></h2>
+        <h3>id is : - <%= data.id %></h3>
+        <hr>
+    <% } %>
+</body>
+</html>
