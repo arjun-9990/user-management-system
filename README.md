@@ -40,11 +40,11 @@ This project is a user management system built using **Node.js**, **Express.js**
 ### Setup
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
+   git clone <https://github.com/arjun-9990/user-management-system.git>
    ```
 2. Navigate to the project directory:
    ```bash
-   cd <project-directory>
+   cd <RoutingWithRestAPIUsingSQL>
    ```
 3. Create a `.env` file and configure your MySQL credentials:
    ```env
@@ -99,8 +99,6 @@ The `user` table contains the following fields:
 - Add pagination for the user list.
 - Improve error handling and logging.
 
-## License
-This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
